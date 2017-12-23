@@ -54,7 +54,7 @@ class swiper extends Component {
                 marginTop: 10,
                 marginLeft: 10,
                 marginRight: 10 }}               
-                source={require('./service.jpg')}
+                source={require('./college.png')}
             />
             <Image
                 style={{ height: imageHeight,
