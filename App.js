@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, StatusBar } from 'react-native';
-import Swiper from './src/components/Swiper';
+import Login from './src/components/login/Login';
 
 class App extends Component {
    render() {
@@ -10,7 +10,7 @@ class App extends Component {
              backgroundColor="rgb(51, 153, 255)"
              barStyle="light-content"
            />
-         <Swiper />
+         <Login />
          </View>
       );
    }
