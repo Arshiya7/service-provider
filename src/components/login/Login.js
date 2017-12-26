@@ -58,7 +58,7 @@ class Login extends Component {
                      {this.state.error}
                    </Text>
                      
-                   <LoginButton >
+                   <LoginButton onPress={Actions.Home} >
                    Sign In
                 </LoginButton>
 

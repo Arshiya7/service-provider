@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, StatusBar } from 'react-native';
 import Login from './src/components/login/Login';
+import Router from './src/components/common/Router';
 
 class App extends Component {
    render() {
@@ -10,7 +11,7 @@ class App extends Component {
              backgroundColor="rgb(51, 153, 255)"
              barStyle="light-content"
            />
-         <Login />
+         <Router />
          </View>
       );
    }
