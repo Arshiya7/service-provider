@@ -1,7 +1,7 @@
 /*eslint linebreak-style: ["error", "windows"]*/
 import React from 'react';
 import { Text, View } from 'react-native';
-import Utils from './../components/common/Utils';
+import Utils from './Utils';
 
 const Header = (props) => {
 const { textStyle, viewStyle } = styles;
@@ -15,7 +15,7 @@ const { textStyle, viewStyle } = styles;
 const styles = {
     viewStyle: {
         flex: 1,
-        backgroundColor: 'rgb(243, 94, 83)',
+        backgroundColor: 'rgb(51, 153, 255)',
         justifyContent: 'flex-start',
         alignItems: 'center',
         flexDirection: 'row',
@@ -28,7 +28,7 @@ const styles = {
     textStyle: {
         fontSize: 20,
         fontFamily: 'Roboto Medium',
-        color: '#ffffff',
+        color: '#000',
         fontWeight: '500',
         justifyContent: 'center',
         marginHorizontal: 50,
