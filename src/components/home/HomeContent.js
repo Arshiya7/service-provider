@@ -14,6 +14,7 @@ class HomeContent extends Component {
          <Header
          headerText="Service provider"
          />
+         <Text> hi</Text>
         </View>
              
     );
