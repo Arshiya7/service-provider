@@ -4,6 +4,7 @@ import { Scene, Router, Actions } from 'react-native-router-flux';
 import Utils from './../common/Utils';
 import Login from './../login/Login';
 import Home from './../home/Home';
+import Profile from './../profile/Profile';
 
 class RouterComponent extends Component {
 
@@ -27,7 +28,14 @@ class RouterComponent extends Component {
               hideNavBar={true}
               sceneStyle={{ backgroundColor: 'rgb(49,49,49)' }}
          />
-       
+        <Scene
+              key="Profile"
+              component={Profile}
+              navigationBarStyle={{ backgroundColor: '#414040', height: Utils.getNavBarHeight(), borderBottomColor: '#414040' }}
+              leftButtonIconStyle={styles.backstyle}
+              hideNavBar
+              sceneStyle={{ backgroundColor: 'rgb(49,49,49)' }}
+         />
        
       </Scene> 
     </Router>

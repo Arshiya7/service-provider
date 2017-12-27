@@ -4,6 +4,7 @@ import DrawerLayout from 'react-native-drawer-layout';
 import TabBarItems from './../common/TabBarItems';
 import HomeContent from './HomeContent';
 import About from './../About';
+import Profile from './../profile/Profile';
 import Menu from './../common/menu';
 import DrawerButton from './../common/DrawerButton';
 import CustomNavBar from './../common/CustomNavBar';
@@ -51,7 +52,7 @@ render() {
 
                                 tab1={<HomeContent />}
                                 tab2={<About />}
-                                tab3={<About />}
+                                tab3={<Profile />}
                                 
                                 tabImagestyle={{ height: 30, width: 30 }}
                                 img2InActive={require('./eventsinactive.png')}
