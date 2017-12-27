@@ -1,4 +1,4 @@
-/*eslint linebreak-style: ["error", "windows"]*/
+/*eslint linebreak-style: ["error", "unix"]*/
 import React from 'react';
 import { Text, View } from 'react-native';
 import Utils from './Utils';

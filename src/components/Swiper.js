@@ -1,4 +1,4 @@
-/*eslint linebreak-style: ["error", "windows"]*/
+/*eslint linebreak-style: ["error", "unix"]*/
 
 import React, { Component } from 'react';
 import {
@@ -7,7 +7,7 @@ import {
   View
 } from 'react-native';
 import Swiper from 'react-native-swiper';
-import Utils from './Utils';
+import Utils from './common/Utils';
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -54,7 +54,7 @@ class swiper extends Component {
                 marginTop: 10,
                 marginLeft: 10,
                 marginRight: 10 }}               
-                source={require('./college.png')}
+                source={require('./service.jpg')}
             />
             <Image
                 style={{ height: imageHeight,

@@ -1,31 +1,30 @@
 import React, { Component } from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View } from 'react-native';
 import Utils from './../common/Utils';
 import Header from './../Header';
+import Swiper from './../Swiper';
+
 
 class HomeContent extends Component {
    constructor(props) {
         super(props);
     }
     render() {
-    return (
-        <View style={styles.container}>
-         
-         <Header
-         headerText="Service provider"
-         />
-         <Text> hi</Text>
+        return (
+            <View style={{ flex: 1 }}>
+            <View style={styles.container}>
+                <Header headerText="Service Provider" />  
+            </View>
+            <Swiper />   
         </View>
-             
-    );
-}
+               
+        );
+    }
 }
 const styles = {
     container: {
-     flex: 1,
-      backgroundColor: '#ffffff', 
-     
-      
+     flex: 0.1,
+     backgroundColor: '#ffffff', 
     },
    
 };

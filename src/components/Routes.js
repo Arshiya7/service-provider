@@ -1,4 +1,4 @@
-/*eslint linebreak-style: ["error", "windows"]*/
+/*eslint linebreak-style: ["error", "unix"]*/
 import React from 'react';
 import { Router, Scene } from 'react-native-router-flux';
 import Home from './/Home';
