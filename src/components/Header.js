@@ -15,7 +15,7 @@ const { textStyle, viewStyle } = styles;
 const styles = {
     viewStyle: {
         flex: 1,
-        backgroundColor: 'rgb(243, 94, 83)',
+        backgroundColor: 'rgb(51, 153, 255)',
         justifyContent: 'flex-start',
         alignItems: 'center',
         flexDirection: 'row',

@@ -13,19 +13,19 @@ const styles = StyleSheet.create({
   wrapper: {
   },
   slide1: {
-    flex: 0.3,
+   
     justifyContent: 'center',
     alignItems: 'stretch',
     backgroundColor: '#9DD6EB',
   },
   slide2: {
-    flex: 0.3,
+    
     justifyContent: 'center',
     alignItems: 'stretch',
     backgroundColor: '#97CAE5',
   },
   slide3: {
-    flex: 0.3,
+    flex: 0.1,
     justifyContent: 'center',
     alignItems: 'stretch',
     backgroundColor: '#92BBD9',
@@ -47,7 +47,6 @@ class swiper extends Component {
             <Swiper 
                 style={styles.wrapper} 
             >
-             
             <Image 
                 style={{ height: imageHeight,
                 width: imageWidth,
@@ -65,7 +64,7 @@ class swiper extends Component {
                 source={require('./laundry.jpg')}
             />
             <Image
-                style={{   height: imageHeight,
+                style={{ height: imageHeight,
                 width: imageWidth,
                 marginTop: 10,
                 marginLeft: 10,

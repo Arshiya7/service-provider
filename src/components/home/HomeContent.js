@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import Utils from './../common/Utils';
 import Header from './../Header';
 import Swiper from './../Swiper';
-
+import Homeservice from './Homeservice';
 
 class HomeContent extends Component {
    constructor(props) {
@@ -11,13 +11,14 @@ class HomeContent extends Component {
     }
     render() {
         return (
+            
             <View style={{ flex: 1 }}>
             <View style={styles.container}>
                 <Header headerText="Service Provider" />  
             </View>
-            <Swiper />   
+            <Swiper />  
         </View>
-               
+          
         );
     }
 }
