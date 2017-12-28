@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Image, TouchableOpacity, ImageBackground } from 'react-native';
-import Utils from './../common/Utils';
-import Header from './../Header';
+
 
 class ProfilePage extends Component {
   

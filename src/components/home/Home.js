@@ -8,6 +8,7 @@ import Profile from './../profile/Profile';
 import Menu from './../common/menu';
 import DrawerButton from './../common/DrawerButton';
 import CustomNavBar from './../common/CustomNavBar';
+import ServiceContent from './../services/ServiceContent';
 
 class TouchTabBar extends Component {
   constructor() {
@@ -51,7 +52,7 @@ render() {
                                 img1Active={require('./eventsactive.bmp')}
 
                                 tab1={<HomeContent />}
-                                tab2={<About />}
+                                tab2={<ServiceContent />}
                                 tab3={<Profile />}
                                 
                                 tabImagestyle={{ height: 30, width: 30 }}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import Utils from './../common/Utils';
 import ProfilePage from './ProfilePage';
+import Bar from './Bar';
 
 class Profile extends Component {
   
@@ -9,6 +10,7 @@ class Profile extends Component {
     return (
         <View style={styles.container}>
           <ProfilePage />
+          <Bar />
         
         </View>
              
