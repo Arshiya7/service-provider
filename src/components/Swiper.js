@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#97CAE5',
   },
   slide3: {
-    flex: 0.1,
+    
     justifyContent: 'center',
     alignItems: 'stretch',
     backgroundColor: '#92BBD9',

@@ -16,7 +16,8 @@ class HomeContent extends Component {
             <View style={styles.container}>
                 <Header headerText="Service Provider" />  
             </View>
-            <Swiper />  
+          
+            <Homeservice />
         </View>
           
         );

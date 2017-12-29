@@ -26,7 +26,6 @@ class Home extends Component {
       >
         <Service tabLabel="Service" />
         <About tabLabel="About" />
-      
       </ScrollableTabView>
       </View>   
 </View>
