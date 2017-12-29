@@ -17,22 +17,22 @@ class ServiceContent extends Component {
    text="Electrician"
  />
   < Service 
-   text="Carpenter"
+   text="Carpentery"
  />
   < Service 
    text="Beauty"
  />
   < Service 
-   text="plumber"
+   text="pest control"
  />
   < Service 
-   text="plumber"
+   text="laundry"
  />
   < Service 
-   text="plumber"
+   text="appliance Repair"
  />
   < Service 
-   text="plumber"
+   text="home cleaning"
  />
   < Service 
    text="plumber"
