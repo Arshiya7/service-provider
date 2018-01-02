@@ -10,7 +10,7 @@ class Profile extends Component {
     return (
         <View style={styles.container}>
           <ProfilePage />
-          <Bar />
+        
         
         </View>
              
