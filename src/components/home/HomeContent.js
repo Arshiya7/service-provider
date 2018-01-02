@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import { View, ScrollView } from 'react-native';
 import Utils from './../common/Utils';
-import Header from './../Header';
 import Swiper from './../Swiper';
+import Header from './../Header';
 import Homeservice from './Homeservice';
+import HomeRepair from './HomeRepair';
+import HomeAppliance from './HomeAppliance';
+import Home1 from './Home1';
+
 
 class HomeContent extends Component {
    constructor(props) {
@@ -12,22 +16,20 @@ class HomeContent extends Component {
     render() {
         return (
             
-            <View style={{ flex: 1 }}>
-            <View style={styles.container}>
-                <Header headerText="Service Provider" />  
+            <View style={{ flex: 1 }}>   
+            <View>
+            <Header headerText="Service Provider" />  
             </View>
-          
-            <Homeservice />
-        </View>
+                <ScrollView>
+                <Homeservice />
+                <HomeAppliance />
+                <HomeRepair />
+                < Home1 />
+                </ScrollView>
+            </View >
+            
           
         );
     }
 }
-const styles = {
-    container: {
-     flex: 0.1,
-     backgroundColor: '#ffffff', 
-    },
-   
-};
 export default HomeContent;

@@ -7,140 +7,69 @@ import Utils from '../common/Utils';
 class Homeservice extends Component {
   render() {
     return (
-      <View style={{ flexDirection: 'column', margin: 5, flex: 1 }}>
+      <View style={{ flex: 1 }}>
+        <View style={{ margin: 10, padding: 30, borderColor: '#808080', borderWidth: 1,flexDirection: 'row' }}>
         <ScrollView horizontal={true}>
-        <View style={styles.container1}>
-        <TouchableOpacity>
-        <View style={styles.container}>
-            <View style={styles.imgContainer}>
-              <View style={styles.imgAlignContainer}>
-                <TouchableOpacity>
-                    <Image 
-                    source={require('./search.png')}
-                    style={styles.imgStyle}
-                    />
-                </TouchableOpacity>
-                <Text style={styles.titleStyle}>
-                Electrician
-              </Text>
-              </View>
-            </View>
+          <View style={{ flexDirection: 'column', margin: 5, borderRightWidth: 1, borderRightColor: '#a6a6a6',borderRadius: 3 }}>
+            <Image
+              source={require('./electrical.png')}
+              style={{ height: 50, width: 50, margin: 5 }}
+            />    
+            <Text style={{ fontSize: 12, color: 'black', justifyContent: 'center', alignItems: 'center',textAlign: 'center', }}> Electrical</Text>
           </View>
-      </TouchableOpacity>
-          <TouchableOpacity>
-          <View style={styles.container}>
-              <View style={styles.imgContainer}>
-                <View style={styles.imgAlignContainer}>
-                  <TouchableOpacity>
-                      <Image 
-                      source={require('./search.png')}
-                      style={styles.imgStyle}
-                      />
-                  </TouchableOpacity>
-                  <Text style={styles.titleStyle}>
-                  Plumber
-                </Text>
-                </View>
-              </View>
-            </View>
-        </TouchableOpacity>
-            <TouchableOpacity>
-            <View style={styles.container}>
-                <View style={styles.imgContainer}>
-                  <View style={styles.imgAlignContainer}>
-                    <TouchableOpacity>
-                        <Image 
-                        source={require('./search.png')}
-                        style={styles.imgStyle}
-                        />
-                    </TouchableOpacity>
-                    <Text style={styles.titleStyle}>
-                    Carpentery
-                  </Text>
-                  </View>
-                </View>
-              </View>
-          </TouchableOpacity>
-            <TouchableOpacity>
-            <View style={styles.container}>
-                <View style={styles.imgContainer}>
-                  <View style={styles.imgAlignContainer}>
-                    <TouchableOpacity>
-                        <Image 
-                        source={require('./search.png')}
-                        style={styles.imgStyle}
-                        />
-                    </TouchableOpacity>
-                    <Text style={styles.titleStyle}>
-                    Beauty
-                  </Text>
-                  </View>
-                </View>
-              </View>
-          </TouchableOpacity>
-            <TouchableOpacity>
-            <View style={styles.container}>
-                <View style={styles.imgContainer}>
-                  <View style={styles.imgAlignContainer}>
-                    <TouchableOpacity>
-                        <Image 
-                        source={require('./search.png')}
-                        style={styles.imgStyle}
-                        />
-                    </TouchableOpacity>
-                    <Text style={styles.titleStyle}>
-                    pest control
-                  </Text>
-                  </View>
-                </View>
-              </View>
-          </TouchableOpacity>
-          </View >
-        </ScrollView>
+          <View style={{ flexDirection: 'column', borderRightWidth: 1, borderRightColor: '#a6a6a6',borderRadius: 3 }}>
+            <Image
+              source={require('./plumbing.png')}
+              style={{ height: 50, width: 50, margin: 5 }}
+            />    
+            <Text style={{ fontSize: 12, color: 'black', justifyContent: 'center', alignItems: 'center',textAlign: 'center', }}> Plumber</Text>
+          </View>
+          <View style={{ flexDirection: 'column', borderRightWidth: 1, borderRightColor: '#a6a6a6',borderRadius: 3 }}>
+            <Image
+              source={require('./carpentry.png')}
+              style={{ height: 50, width: 50, margin: 5 }}
+            />    
+            <Text style={{ fontSize: 12, color: 'black', justifyContent: 'center', alignItems: 'center',textAlign: 'center', }}> Carpentry</Text>
+          </View>
+          <View style={{ flexDirection: 'column', borderRightWidth: 1, borderRightColor: '#a6a6a6',borderRadius: 3 }}>
+            <Image
+              source={require('./spa.jpg')}
+              style={{ height: 50, width: 50, margin: 5 }}
+            />    
+            <Text style={{ fontSize: 12, color: 'black', justifyContent: 'center', alignItems: 'center',textAlign: 'center', }}> Spa </Text>
+          </View>
+          <View style={{ flexDirection: 'column', borderRightWidth: 1, borderRightColor: '#a6a6a6',borderRadius: 3 }}>
+            <Image
+              source={require('./painter.png')}
+              style={{ height: 50, width: 50, margin: 5, }}
+            />    
+            <Text style={{ fontSize: 12, color: 'black', justifyContent: 'center', alignItems: 'center',textAlign: 'center', }}> Painter</Text>
+          </View>
+          <View style={{ flexDirection: 'column', borderRightWidth: 1, borderRightColor: '#a6a6a6',borderRadius: 3 }}>
+            <Image
+              source={require('./laundry.png')}
+              style={{ height: 50, width: 50, margin: 5, }}
+            />    
+            <Text style={{ fontSize: 12, color: 'black', justifyContent: 'center', alignItems: 'center',textAlign: 'center', }}> Laundry</Text>
+          </View>
+          <View style={{ flexDirection: 'column', borderRightWidth: 1, borderRightColor: '#a6a6a6',borderRadius: 3 }}>
+            <Image
+              source={require('./ho.png')}
+              style={{ height: 50, width: 50, margin: 5, }}
+            />    
+            <Text style={{ fontSize: 12, color: 'black', justifyContent: 'center', alignItems: 'center',textAlign: 'center', }}> Home Cleaning</Text>
+          </View>
+          <View style={{ flexDirection: 'column', borderRightWidth: 1, borderRightColor: '#a6a6a6',borderRadius: 3 }}>
+            <Image
+              source={require('./search.png')}
+              style={{ height: 50, width: 50, margin: 5, }}
+            />    
+            <Text style={{ fontSize: 12, color: 'black', justifyContent: 'center', alignItems: 'center', textAlign: 'center', }}> Pest control</Text>
+          </View>
+          </ScrollView>
+        </View>
       </View>
     );
   }
 }
-const styles = {
-         container1: {
-            flexDirection: 'row',
-            height: Utils.getWidth(),
-            borderColor: '#808080',
-            borderWidth: 1,
-            alignItems: 'center',  
-            flex: 1,
-            margin: 5
-           
-         },
-         container: {
-          flexDirection: 'row',
-          height: Utils.getNavBarHeight(),
-          borderColor: '#fff',
-          borderWidth: 1,
-          alignItems: 'center',
-          margin: 15
-         },
-         imgContainer: {
-           flex: 1,
-           flexDirection: 'column',
-           alignItems: 'center',
-           justifyContent: 'center'
-         },
-       
-         imgAlignContainer: {
-           flex: 1,
-           flexDirection: 'column',
-           alignItems: 'center',
-           justifyContent: 'center'
-         },
-         imgStyle: {
-           width: 30, 
-           height: 30
-         },
-         titleStyle: {
-            fontSize: 17, 
-            color: 'black', 
-            marginLeft: 15
-         }
-     };
 export default Homeservice;

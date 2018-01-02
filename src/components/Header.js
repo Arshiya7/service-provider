@@ -14,14 +14,18 @@ const { textStyle, viewStyle } = styles;
 
 const styles = {
     viewStyle: {
-        flex: 1,
         backgroundColor: 'rgb(51, 153, 255)',
         justifyContent: 'flex-start',
         alignItems: 'center',
         flexDirection: 'row',
         height: Utils.getNavBarHeight('window'),
         width: Utils.getWidth('window'),
-        position: 'absolute',
+        paddingTop: 15,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        elevation: 2,
+        position: 'relative'
        
     },
 
@@ -29,10 +33,13 @@ const styles = {
         fontSize: 20,
         fontFamily: 'Roboto Medium',
         color: '#ffffff',
-        fontWeight: '500',
+        fontWeight: 'bold',
         justifyContent: 'center',
         marginHorizontal: 50,
-        paddingLeft: 30
+       
+        alignItems: 'center',
+        paddingLeft: 30,
+        textAlign: 'center'
         
     },
 };

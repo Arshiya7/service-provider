@@ -7,7 +7,7 @@ import About from './../About';
 import Profile from './../profile/Profile';
 import Menu from './../common/menu';
 import DrawerButton from './../common/DrawerButton';
-import CustomNavBar from './../common/CustomNavBar';
+import Header from './../Header';
 import ServiceContent from './../services/ServiceContent';
 
 class TouchTabBar extends Component {
@@ -24,7 +24,7 @@ render() {
     const navigationView = (
         <View style={[styles.container]}>
             <Image
-            source={require('./eventsinactive.png')} 
+            source={require('./download.png')} 
             style={{ width: 320, height: 250 }} 
             />
               <Menu />
@@ -38,9 +38,8 @@ render() {
         ref={(_drawer) => this.drawer = _drawer}
         renderNavigationView={() => navigationView}
         >
+            
               <View style={{ flex: 1 }}>
-              
-      
                             <TabBarItems
                                 title1="Home"
                                 title2="Services"
@@ -48,8 +47,8 @@ render() {
                                 titleStyle={{ color: '#000' }}
                                 selectedTitleStyle={{ color: '#72bb53' }}
                                 tabImagestyle={{ height: 30, width: 30 }}
-                                img1InActive={require('./eventsinactive.png')}
-                                img1Active={require('./eventsactive.bmp')}
+                                img1InActive={require('./homeservice.png')}
+                                img1Active={require('./homeservice.png')}
 
                                 tab1={<HomeContent />}
                                 tab2={<ServiceContent />}
@@ -57,12 +56,12 @@ render() {
                                 
                                 tabImagestyle={{ height: 30, width: 30 }}
                                 img2InActive={require('./eventsinactive.png')}
-                                img2Active={require('./eventsactive.bmp')}
+                                img2Active={require('./eventsinactive.png')}
 
                                 
                                 tabImagestyle={{ height: 30, width: 30 }}
-                                img3InActive={require('./eventsinactive.png')}
-                                img3Active={require('./eventsactive.bmp')}
+                                img3InActive={require('./profile.png')}
+                                img3Active={require('./profile.png')}
 
                             />
     
