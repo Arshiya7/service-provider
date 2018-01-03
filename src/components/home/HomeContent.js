@@ -4,9 +4,6 @@ import Utils from './../common/Utils';
 import Swiper from './../Swiper';
 import Header from './../Header';
 import Homeservice from './Homeservice';
-import HomeRepair from './HomeRepair';
-import HomeAppliance from './HomeAppliance';
-import Home1 from './Home1';
 
 
 class HomeContent extends Component {
@@ -21,10 +18,10 @@ class HomeContent extends Component {
             <Header headerText="Service Provider" />  
             </View>
                 <ScrollView>
-                <Homeservice />
-                <HomeAppliance />
-                <HomeRepair />
-                < Home1 />
+                <Homeservice serviceText="Electrical" />
+                <Homeservice serviceText="Plumber" />
+                <Homeservice serviceText="Carpenter" />
+                <Homeservice serviceText="Beauty" />
                 </ScrollView>
             </View >
             

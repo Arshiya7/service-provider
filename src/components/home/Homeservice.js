@@ -8,9 +8,10 @@ class Homeservice extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <View style={{ margin: 10, padding: 30, borderColor: '#808080', borderWidth: 1,flexDirection: 'row' }}>
+        <View style={{ margin: 10,padding: 30, borderColor: '#808080', borderWidth: 1, flexDirection: 'row' }}>
         <ScrollView horizontal={true}>
-          <View style={{ flexDirection: 'column', margin: 5, borderRightWidth: 1, borderRightColor: '#a6a6a6',borderRadius: 3 }}>
+          <View style={{ flexDirection: 'column', margin: 5, borderRightWidth: 1, borderRightColor: '#a6a6a6', borderRadius: 3 }}>
+          <Text style={{marginTop:5}}>{this.props.serviceText}</Text>
             <Image
               source={require('./electrical.png')}
               style={{ height: 50, width: 50, margin: 5 }}

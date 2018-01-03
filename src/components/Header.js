@@ -36,7 +36,7 @@ const styles = {
         fontWeight: 'bold',
         justifyContent: 'center',
         marginHorizontal: 50,
-       
+        marginBottom: 15,
         alignItems: 'center',
         paddingLeft: 30,
         textAlign: 'center'
