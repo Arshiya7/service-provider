@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text, Image, TouchableOpacity,ImageBackground,Picker } from 'react-native';
 import Utils from '../common/Utils';
-import DatePicker from 'react-native-datepicker'
+import DatePicker from 'react-native-datepicker';
+import LoginButton from './../login/LoginButton';
 
 class BookingService extends Component {
     state = {user: ''}
@@ -58,6 +59,37 @@ class BookingService extends Component {
                             onDateChange={(date) => {this.setState({date: date})}}
                      />
             </View>
+            <View style={styles.container}>
+                  
+                 <Text style={{ fontSize: 16, color: '#000' }}>Service Type</Text>
+
+                  <Picker 
+                        style={{ height: 50, width: 250, marginLeft: 20 }}
+                        selectedValue = {this.state.user} onValueChange = {this.updateUser}>
+                            <Picker.Item label = "Free Service" value = "Free Service" />
+                            <Picker.Item label = "Periodic Service" value = "Periodic Service" />
+                            <Picker.Item label = "Washing" value = "Washing" />
+                            <Picker.Item label = "Unscheduled REpair" value = "Unscheduled REpair" />
+                    </Picker>
+          </View>
+          <View style={styles.container}>
+                  
+                  <Text style={{ fontSize: 16, color: '#000' }}>Service Location</Text>
+ 
+                   <Picker 
+                         style={{ height: 50, width: 250, marginLeft: 20 }}
+                         selectedValue = {this.state.user} onValueChange = {this.updateUser}>
+                             <Picker.Item label = "Home" value = " Home" />
+                             <Picker.Item label = "Maruti mobile support Service" value = " Maruti mobile support Service" />
+                             <Picker.Item label = "Workshop" value = "Workshop" />
+                           
+                     </Picker>
+           </View>
+           <TouchableOpacity style={styles.buttonStyle}>
+       <Text style={styles.textStyle}>
+            Book Now
+       </Text>
+       </TouchableOpacity>
       </View>
        
 
@@ -109,6 +141,22 @@ class BookingService extends Component {
             fontSize: 30,
             alignSelf: 'center',
             color: 'red'
-         }
+         },
+         textStyle: {
+            alignSelf: 'center',
+             fontSize: 15.56,
+             fontWeight: '500',
+             color: '#ffffff',
+            
+         },
+         buttonStyle: {
+             margin: 15,
+             alignSelf: 'stretch',
+             borderRadius: 4,
+             borderWidth: 1,
+            backgroundColor: 'red',
+            marginTop: 10,
+            padding: 20
+            }
      };
 export default BookingService;
