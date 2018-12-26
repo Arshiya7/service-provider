@@ -5,11 +5,65 @@ import { Actions } from 'react-native-router-flux';
 import Utils from './../common/Utils';
 import Input from './../login/Input';
 import LoginButton from './../login/LoginButton';
-
+import Spinner from './Spinner';
 
 class Login extends Component {
-      state = { email: '', password: '',  };
+    state = { email: '', password: '', error: '', loading: false, userMode: '' };
+    componentWillMount() {    
+        firebaseApp.auth().onAuthStateChanged((user) => {
+        if (user) {
+          console.log(user.uid);
+        }
+      });
+    }
 
+    onButtonPress(user) {         
+        const ItemsRef = firebaseApp.database().ref('users');
+        ItemsRef.orderByChild('userName').equalTo('userName').once('value', snapshot => {
+          const userData = snapshot.val();
+          if (userData) {
+            console.log('exists!');
+            ToastAndroid.show('Registered User', ToastAndroid.CENTER); 
+          } else {
+            firebaseApp.database().ref('users').child('login users').set({ userName: this.state.email, password: this.state.password, userMode: '' });
+          }
+      });
+
+          const { email, password } = this.state;
+          this.setState({ error: '', loading: true });
+
+          firebaseApp.auth().signInWithEmailAndPassword(email, password)
+          .then(this.onLoginSuccess.bind(this))        
+          .catch(() => {
+            firebaseApp.auth().createUserWithEmailAndPassword(email, password)        
+              .then(this.onLoginSuccess.bind(this))
+              .catch(this.onLoginFail.bind(this));
+        });
+      
+    }
+
+    onLoginFail() {
+        this.setState({ error: 'Authentication Failed, Check email & password ', loading: false });
+      }
+
+
+      onLoginSuccess() {
+        this.setState({
+            email: '',
+            password: '',
+            loading: false,
+            error: '',
+            userMode: ''
+          });
+         
+        }
+    renderButton() {
+        if (this.state.loading) {
+            return <Spinner size="small" />;
+          }
+         
+      }
+         
     render() {
         return (
            
@@ -55,10 +109,11 @@ class Login extends Component {
                     </View>  
                     </View>   
                     <Text style={styles.errorTextStyle}>
-                     {this.state.error}
-                   </Text>
-                     
-                   <LoginButton onPress={Actions.Home} >
+                    {this.state.error}
+                  </Text>
+                    
+
+                  <LoginButton onPress={() => Actions.Home()} >
                    Sign In
                 </LoginButton>
 
