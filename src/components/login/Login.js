@@ -113,7 +113,7 @@ class Login extends Component {
                   </Text>
                     
 
-                  <LoginButton onPress={() => Actions.Home()} >
+                  <LoginButton onPress={() => Actions.serviceContent()} >
                    Sign In
                 </LoginButton>
 

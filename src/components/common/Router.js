@@ -5,6 +5,8 @@ import Utils from './../common/Utils';
 import Login from './../login/Login';
 import Home from './../home/Home';
 import Profile from './../profile/Profile';
+import serviceContent from '../home/ServiceContent';
+import BookingService from '../home/BookingService';
 
 class RouterComponent extends Component {
 
@@ -23,7 +25,7 @@ class RouterComponent extends Component {
           <Scene
               key="Home"
               component={Home}
-              navigationBarStyle={{ backgroundColor: '#414040', height: Utils.getNavBarHeight(), borderBottomColor: '#414040' }}
+              navigationBarStyle={{ backgroundColor: 'rgb(51, 153, 255)', height: Utils.getNavBarHeight(), borderBottomColor: '#414040' }}
               leftButtonIconStyle={styles.backstyle}
               hideNavBar={true}
               sceneStyle={{ backgroundColor: 'rgb(49,49,49)' }}
@@ -37,6 +39,23 @@ class RouterComponent extends Component {
               sceneStyle={{ backgroundColor: 'rgb(49,49,49)' }}
          />
        
+  
+        <Scene
+              key="serviceContent"
+              component={serviceContent}
+              navigationBarStyle={{ backgroundColor: 'rgb(51, 153, 255)', height: Utils.getNavBarHeight(), borderBottomColor: '#414040' }}
+              leftButtonIconStyle={styles.backstyle}
+              title="Types of service"
+              sceneStyle={{ backgroundColor: 'rgb(49,49,49)' }}
+         />
+        <Scene
+              key="BookingService"
+              component={BookingService}
+              navigationBarStyle={{ backgroundColor: 'rgb(51, 153, 255)', height: Utils.getNavBarHeight(), borderBottomColor: '#414040' }}
+              leftButtonIconStyle={styles.backstyle}
+              title="Booking service"
+              sceneStyle={{ backgroundColor: 'rgb(49,49,49)' }}
+         />
       </Scene> 
     </Router>
         );
